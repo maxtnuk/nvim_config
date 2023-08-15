@@ -9,6 +9,19 @@ if true then return {} end
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
+  -- nvim-neo-tree
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+
+    branch = "v3.x",
+
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    },
+  },
+
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
